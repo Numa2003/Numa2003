@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Unidad III</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Ediciones Fares</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+</button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Estrategias de Aprendizaje</a>
+                    </li>
+
+                    </a>
+
+
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container-md">
+        <center>
+            <h1>Arreglos(Matrices)</h1>
+        </center>
+        <h4>Conceptualizaci&oacute;n</h4>
+        <p>Son un tipo especial de variables que pueden temporalmente uno o varios datos.Una variable. <br> de arreglo o vector puede contener al mismo tiempo,diferentes valores bajo un mismo nombre.</p>
+        <h4>Matrices</h4>
+        <p>Una Matriz es un tipo de variable que puede almacenar varios valor a la vez.En las matrices de <br> una dimensi&oacute;n <b>(vectores)</b> cada elemento se identifica por un &iacute;ndice que se escribe entre corchetes <br>
+            <b>($matriz($indice))</b>.</p>
+        <p>Podemos imaginarnos a un arreglo como una secuencia contigua de celdas <b>(espacios en memoria)</b> o <br> casillas,en cada una de las cuales se puede guardar un elemento de la colecci&oacute;n.</p>
+        <img src="img/arrays.jpeg" alt="">
+        <p>Un array puede ser creado con el constructor del lenguaje array().Este toma cualquier n&uacute;mero de parejas, <br> clave=>valor como argumentos.</p>
+        <img src="img/array ejemplo.png" alt="">
+        <p><b>Ejemplo:</b></p>
+        <img src="img/ejemplo de array.png" alt="950px" width="550px">
+        <p><b>Resultado:</b></p>
+        <img src="img/resultado ejemplo.png" alt="950px" width="550px">
+        <p>Tambi&eacute;n se puede usar la sintaxis de array corta,la cual reemplaza array() con []. <br>
+            <b>Ejemplo:</b></p>
+        <img src="img/ejemplo1 array.png" alt="950px" width="550px">
+        <p>La clave puede ser un <b>integer</b> o un <b>string</b> y el valor puede ser de cualquier tipo. <br> En la declaraci&oacute;n de los Arrays hay que tomar en cuenta las siguientes caracter&iacute;sticas: <br> *En string que contenga un integer
+            v&aacute;lido ser&aacute; convertido al tipo integer. <b>
+            Por ejemplo:
+        </b> Si tenemos la <br> clave "3",este ser&aacute; almacenada como 3;pero si tenemos la clave "03" no ser&aacute; convertido,ya que no <br> es un n&uacute;mero integer decimal v&aacute;lido.</p>
+
+        <p>*Un float tambi&eacute;n ser&aacute; convertido a integer,lo que significa que la parte fraccionaria se eliminar&aacute;. <b>Por <br>
+        ejemplo:</b>Si la clave es 7.2,este ser&aacute; almacenado como 7.<br>
+        </p>
+
+        <p>*Cuando la clave es un booleano,estos son convertidos a integers,es decir,la clave true ser&aacute; almacenada <br> como 1 y la clave false como 0.</p>
+        <p>Los arrays y los objects no pueden utilizarse como claves.Si se hace,dar&aacute; lugar a una advertencia: <br>
+            <b>Illegal offset type.</b></p>
+        <img src="img/ejemplo3 array.png" alt="950px" width="550px">
+        <img src="img/resultado ejemplo3.png" alt="950px" width="550px">
+        <p>En caso que varios elementos de un array utilicen la misma clave,solamente ser&aacute; tomada la &uacute;ltima.</p>
+        <p>Como todas las claves en el ejemplo anterior se convierten en 1,los valores ser&aacute;n sobreescritos en cada <br> nuevo elemento,por lo que el &uacute;ltimo valor asignado "Alexandra Fares" es el &uacute;nico que queda.</p>
+        <p>Algo importante que mencionar,es que los arrays en PHP pueden contener claves integer y string al <br> mismo tiempo ya que no distingue entre arrays indexados y asociativos.</p>
+
+        <p> Como hemos observado el &iacute;ndice puede ser de tipo de cadena o n&uacute;merico,tambi&eacute;n podemos decir que <br> cuando se crean dos &iacute;ndices id&eacute;nticos,el &uacute;ltimo sobrescribe al primero.</p>
+        <p>Cuando se omite el &iacute;ndice,se genera un &iacute;ndice num&eacute;rico autom&aacute;ticamente,empezando por 0.Si el &iacute;ndice <br> es n&uacute;meerico,el siguiente &iacute;ndice ser&aacute; el n&uacute;mero del &iacute;ndice mayor +1.</p>
+
+        <div class="container-fluid">
+            <h2>Range</h2>
+            <p>Permite crear un array que tiene un rango de elementos. <br>
+                <b>Sintaxis:</b> <br> range(inicio,fin,step)
+            </p>
+
+            <p>Donde: <br>
+                <b>*Inicio:</b>Representa el primer valor de la secuencia. <br>
+                <b>*Fin:</b>La secuencia finalizada al encontrar el valor fin. <br>
+                <b>*Step:</b>Si se proporciona un valor a step,este ser&aacute; usado como el incremeto entre los elementos de la <br> secuencia.Si no se especifica,el valor predeterminado de step ser&aacute; 1.</p>
+            <p><b>Ejemplo:</b> <br> 1.Crear una matriz de elementos del 0 al cuarenta,con incremento de 10 en 10</p>
+            <img src="img/matriz en php.png" alt="950px" width="250px">
+            <img src="img/resultado matriz.png" alt="250px" width="950px">
+            <p>Como podemos observar en el resultado en la casilla cero se almacen&oacute; 0,en la casilla 1 se almacen&oacute; <br> el 10,en la casilla dos se almacen&oacute; el 20 y as&iacute; sucesivamente hasta llegar a 40.</p>
+            <p>2.Crear una matriz que almacene los caracteres de la "a" a la "g".</p>
+            <img src="img/matriz1.png" alt="950px" width="250px">
+            <img src="img/resultado matriz1.png" alt="250px" width="950px">
+
+            <h2>Matrices MultiDimensionales</h2>
+            <p>Es un arrrays de m&aacute;s de una dimensi&oacute;n. <br> En array podemos almacenar datos como la siguiente tabla:</p>
+            <table class="table table-bordered border-primary">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Sexo</th>
+                </tr>
+                <tr>
+                    <td>Mariela Agurc&iacute;a</td>
+                    <td>15</td>
+                    <td>F</td>
+                </tr>
+
+                <tr>
+                    <td>Am&iacute;lcar Pancracio</td>
+                    <td>20</td>
+                    <td>M</td>
+                </tr>
+                <tr>
+                    <td>Ernestina</td>
+                    <td>15</td>
+                    <td>F</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="container-md">
+        <p>Los datos de la tabla se podr&iacute;n almacenar en una matriz de dos dimensiones.</p>
+        <img src="img/matriz de dos o mas dimensiones.png" alt="450px" width="350px">
+        <p><b>Resultado:</b></p>
+        <img src="img/resultado de matriz de dos dimensiones.png" alt="250px" width="950px">
+        <p>En el ejemplo anterior,se cre&oacute; una matriz de dos dimensiones por lo que acceder a un valor se utiliza <br> matriz[indice (a)][indice (b)],como se puede observar en la siguiente imagen: &iacute;ndice (a) representa la fila <br> y &iacute;ndice
+            (b) la columna.</p>
+        <table class="table table-bordered border-primary">
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Sexo</th>
+            </tr>
+            <tr>
+                <td>Mariela Agurc&iacute;a</td>
+                <td>15</td>
+                <td>F</td>
+            </tr>
+
+            <tr>
+                <td>Am&iacute;lcar Pancracio</td>
+                <td>20</td>
+                <td>M</td>
+            </tr>
+            <tr>
+                <td>Ernestina</td>
+                <td>15</td>
+                <td>F</td>
+            </tr>
+        </table>
+        <p>Tambi&eacute;n se puede utilizar dos ciclos for para recorrer y mostrar todos los datos.el primer ciclo recorrer&iacute;a <br> todas las filas y el segundo las columnas.</p>
+        <img src="img/ciclo for.png" alt="450px" width="350px">
+        <p><b>Resultado:                        </b></p>
+        <img src="img/ciclo for resultado.png" alt="250px" width="950px">
+        <h2>Funciones de los Arrays</h2>
+        <p>PHP tiene una gran cantidad de funciones que permiten obtener informaci&oacute;n r&aacute;pida de un arrays,como: <br> *Contar el n&uacute;mero de elementos de un array. <br> *Sumar todos los datos de un array.</p>
+        <h2>Count</h2>
+        <p>Cuenta todos los elementos de un arrays,<b>Ejemplo:</b></p>
+        <img src="img/contar arrays.png" alt="450px" width="350px">
+        <p>
+            <B>Resultado:</B>
+        </p>
+        <img src="img/resultado de contar arrays.png" alt="250px" width="950px">
+        <p><b>array_sum</b> <br> Obtiene la suma de los valores de un array. <br>
+            <b>Ejemplo:</b></p>
+        <img src="img/suma de arrays.png" alt="450px" width="350px">
+        <p><b>Resultado:</b></p>
+        <img src="img/resultado de suma de arrays.png" alt="250px" width="950px">
+        <h2>array_values</h2>
+        <p>Devuelve todos los valores de un array.</p>
+        <p><b>Ejemplo:</b></p>
+
+        <img src="img/array values.png" alt="450px" width="350px">
+        <p><b>Resultado:</b></p>
+        <img src="img/resultado arrays values.png" alt="250px" width="950px">
+        <p>Existen gran cantidad de funciones que permiten trabajar con array.</p>
+
+        <!--Section: Content-->
+
+        <hr class="my-5" />
+
+        <!--Section: Content-->
+        <section class="mb-5">
+            <h4 class="mb-5 text-center"><strong>Derechos Reservados</strong></h4>
+
+
+            <!--Main layout-->
+
+
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2021 Copyright:
+                <a class="text-dark" href="#">Nuria Mayorga Almendarez</a>
+            </div>
+            <!-- Copyright -->
+            </footer>
+            <!--Footer-->
+
+
+            <!--JQuery-->
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+            <!--Bootstrap tooltips-->
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+            <!---Bootstrap core JavaScript-->
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+            <!--MDB core JavaScript-->
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/js/mdb.min.js"></script>
+
+            <button type="button" class="btn btn-outline-primary"><a href="Funciones.html">Ir a la siguiente p&aacute;gina</button></a>
+
+
+</body>
+
+</html>

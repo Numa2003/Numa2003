@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Tablas en Documentos HTML</title>
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Bootstap core CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstap/4.1.3/css/bootstrap.min/" rel="stylesheet">
+
+    <!--Material Design Bootstrap-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/css/mdb.min.css" rel="stylesheet">
+</head>
+<header>
+    <style>
+        .white {
+            background: rgba(0, 0, 0, 0.2);
+            ;
+        }
+        
+        .top-nav-collapse {
+            background: rgba(0, 0, 0, 0.774) !important;
+            ;
+        }
+        
+        a {
+            text-decoration-color: white;
+        }
+        /* Height for devices larger than 576px */
+        
+        @media (min-width: 992px) {
+            #intro {
+                margin-top: -58.59px;
+            }
+        }
+        
+        .navbar .nav-link {
+            color: #fff !important;
+        }
+    </style>
+</header>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark gris scrolling-navbar fixed-top">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="https:/edicionesfares.com">Ediciones Fares</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="codigos basicos.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Acerca de</a>
+                    </li>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+                    </ul>
+
+                </ul>
+                <ul class="navbar-nav nav-flex-icons">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fa fa-facebook"></i>
+
+                        </a>
+                    </li>
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa fa-twitter"></i>
+
+                            </a>
+                        </li>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <hr>
+    </head>
+
+    <body>
+        <center>
+            <h1>Tablas en Documentos HTML</h1>
+
+        </center>
+        <hr>
+
+
+
+        <!--Main layout-->
+        <main class="mt-5">
+            <div class="container">
+                <!--Section: Content-->
+                <section>
+                    <div class="row">
+                        <div class="col-md-6 gx-5 mb-4">
+                            <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+                                <img src="img/tablas.jpg" class="img-fluid" />
+                                <a href="#!">
+                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 gx-5 mb-4">
+                            <h4><strong>Conceptualizaci&oacute;n</strong></h4>
+                            <p class="text-muted">
+
+                                <p>
+                                    Las tablas se utilizan para agrupar informaci&oacute;n en columnas y filas.En versiones anteriores de HTML,las tablas se utilizaban para la maquetaci&oacute;n de los sitios,con la aparici&oacute;n de los CSS esta t&eacute;cnica ya no se utiliza.
+                                    <hr>
+                                </p>
+                                <p>Cada tabla est&aacute; compuesta por filas y columnas,el conjunto de la tabla se delimita con las directicas
+                                    < table>
+                                        < /table>
+                                            ,la filas se crean con la directiva
+                                            < tr> y las celdas con la etiqueta
+                                                < td>.</p>
+                                <hr>
+                                <p>Las directivas
+                                    < tr> y
+                                        < td> trabajan siempre juntas aunque haya que crear solamente una celda.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Main layout-->
+                <main class="mt-5">
+                    <div class="container">
+                        <!--Section: Content-->
+                        <section>
+                            <div class="row">
+                                <div class="col-md-6 gx-5 mb-4">
+                                    <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+                                        <img src="img/memoria rom.jpg" class="img-fluid" />
+                                        <a href="#!">
+                                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 gx-5 mb-4">
+                                    <h4><strong>Aplicar Bordes a las Tablas</strong></h4>
+                                    <p class="text-muted">
+                                        Para aplicar un borde a una tabla se utiliza el atributo
+                                        < border> de la directiva
+                                            < table> entre m&aacute;s grande es <br> el n&uacute;mero del valor n&uacute;merico del atributo m&aacute;s grueso es el borde.</p>
+                                    <p>HTMl5 solamente permite el atributo border dentro de la directiva
+                                        < table>.</p>
+                                    <img src="img/codigo borde tabla.png" alt="250px" width="450px">
+                                    <img src="img/tabla con borde.png" alt="250px" width="450px">
+
+                                    <p>Para controlar cada aspecto de la tabla,HTML ofrece etiquetas que permiten controlarlo.</p>
+                                    <p>Una tabla est&aacute; formada por: <br> *Filas se crean con la etiqueta
+                                        < tr> <br> *Grupo de columnas se manipulan con la etiqueta (
+                                            < colgroup></ colgroup>). <br> *Encabezamiento de las celdas se crea con la etiqueta
+                                            < th>. <br> *Cuerpo de la celda se crea con la etiqueta
+                                                < th> o
+                                                    < td>. <br> *Titulo de la tabla se crea con la etiqueta
+                                                        < caption>. <br> *Encabezamiento de la tabla se agrupa con la etiqueta
+                                                            < thead>. <br> *Cuerpo de la tabla se agrupa con la etiqueta
+                                                                < tbody>. <br> *Pie de la tabla se agrupa con la etiqueta
+                                                                    < tfoot>.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        <hr>
+                        <center>
+                            <h2>Ejemplo</h2>
+                        </center>
+                        <img src="img/codigo ejemplo.png" alt="250px" width="450px">
+                        <p>El resultado del ejemplo ser&iacute;a:</p>
+                        <img src="img/listado de alumnos.png" alt="250px" width="450px">
+                        <hr>
+                        <p><b>Ejemplos:</b></p>
+                        <p><b>Ejemplo1:</b>Crear el encabezado de las columnas,al colocar el texto de la cabecera con la etiqueta
+
+                            < th>,el <br> navegador centra el texto en la celda y le aplica negrita.
+                        </p>
+                        </p>
+                        <img src="img/ejemplo1.png" alt="250px" width="450px">
+                        <img src="img/ejemplo1 resultado.png" alt="250px" width="450px">
+                        <p>Ejemplo2:</p>
+                        <p>Para definir el cuerpo de la tabla se utiliza la directiva
+                            < tbody>,esta directiva se ubica debajo de la directa <br>
+                                < tfoot>.
+                        </p>
+                        <img src="img/ejemplo2 .png" alt="250PX" width="450px">
+                        <img src="img/ejemplo2 resultado.png" alt="250px" width="450px">
+                        <p><b>Ejemplo3:</b>Definir el pie de la Tabla</p>
+                        <p>Para definir el pie de la tabla se utiliza la directiva
+                            < tfoot>,esta directiva se ubica arriba de la directiva
+                                < tbody>.
+                        </p>
+                        <img src="img/ejemplo3.png" alt="250px" width="450px">
+                        <img src="img/ejemplo3 resultado.png" alt="250px" width="450px">
+                        <p><b>Ejemplo4:</b>Definir el t&iacute;tulo de la tabla. <br> Para crear el t&iacute;tulo de la tabla se utiliza la etiqueta
+                            < caption>.Esta debe ubicarse inmediatamente despu&eacute;s <br> de la directiva
+                                < table>.
+                        </p>
+                        <p>Es importante que el t&iacute;tulo sea claro para que la informaci&oacute;n de la tabla sea comprensible por el usuario.</p>
+                        <img src="img/ejemplo4.png" alt="250px" width="450px">
+                        <img src="img/ejemplo4 resultado.png" alt="250px" width="450px">
+
+
+
+
+
+
+                        </section>
+
+
+
+
+                        <!--Section: Content-->
+
+                        <hr class="my-5" />
+
+                        <!--Section: Content-->
+                        <section class="mb-5">
+                            <h4 class="mb-5 text-center"><strong>Derechos Reservados</strong></h4>
+
+
+                            <!--Main layout-->
+
+
+
+                            <!-- Copyright -->
+                            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                                © 2021 Copyright:
+                                <a class="text-dark" href="#">Nuria Mayorga Almendarez</a>
+                            </div>
+                            <!-- Copyright -->
+                            </footer>
+                            <!--Footer-->
+
+
+                            <!--JQuery-->
+                            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+                            <!--Bootstrap tooltips-->
+                            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+                            <!---Bootstrap core JavaScript-->
+                            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+                            <!--MDB core JavaScript-->
+                            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/js/mdb.min.js"></script>
+
+                            <button type="button" class="btn btn-outline-primary"><a href="DreamWeaver.html">Ir a la siguiente p&aacute;gina</button></a>
+                    </div>
+    </body>
+
+</html>

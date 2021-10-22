@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Codigos Basicos HTML </title>
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Bootstap core CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstap/4.1.3/css/bootstrap.min/" rel="stylesheet">
+
+    <!--Material Design Bootstrap-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/css/mdb.min.css" rel="stylesheet">
+</head>
+<header>
+    <style>
+        .white {
+            background: rgba(0, 0, 0, 0.2);
+            ;
+        }
+        
+        .top-nav-collapse {
+            background: rgba(0, 0, 0, 0.774) !important;
+            ;
+        }
+        
+        a {
+            text-decoration-color: white;
+        }
+        /* Height for devices larger than 576px */
+        
+        @media (min-width: 992px) {
+            #intro {
+                margin-top: -58.59px;
+            }
+        }
+        
+        .navbar .nav-link {
+            color: #fff !important;
+        }
+    </style>
+</header>
+<nav class="navbar navbar-expand-lg navbar-dark gris scrolling-navbar fixed-top">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="https:/edicionesfares.com">Ediciones Fares</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="electricidad.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Acerca de</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="Estrategias Unidad.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+Estrategias de Aprendizaje
+</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+                    </ul>
+
+            </ul>
+            <ul class="navbar-nav nav-flex-icons">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fa fa-facebook"></i>
+
+                    </a>
+                </li>
+                <ul class="navbar-nav nav-flex-icons">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fa fa-twitter"></i>
+
+                        </a>
+                    </li>
+        </div>
+    </div>
+    </div>
+</nav>
+
+<body>
+    <div class="container-sm">
+        <hr>
+        <center>
+            <h1>C&oacute;digos B&aacute;sicos HTML</h1>
+        </center>
+        <hr>
+        <main class="mt-5">
+            < class="container">
+                <!--Section: Content-->
+                <section>
+                    <div class="row">
+                        <div class="col-md-6 gx-5 mb-4">
+                            <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+                                <img src="img/codigo html.png" class="img-fluid" />
+                                <a href="#!">
+                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 gx-5 mb-4">
+                            <h4><strong> < DOCTYPE></strong></h4>
+                            <p class="text-muted">
+
+                                Se utiliza para espicificar el tipo de documento con que se trabajar&aacute;, es obligatorio y va el inicio de cada p&aacute;gina web.Para la versi&oacute;n HTML5 se utiliza <b> < ! doctype html>.</b>
+
+
+                                <hr>
+                            </p>
+                            <h4><strong> < html>
+                                < /html></strong></h4>
+                            <p class="text-muted"> Se utiliza para indicarle al navegador que el contenido que sigue debe ser interpretado como c&oacute;digo HTML.
+                            </p>
+                            <hr>
+                            <h4><strong>< head> < /head></strong></h4>
+                            <p class="text-muted">
+                                < Indica el inicio y final del encabezado del documento.Por lo general,el encabezado almacena informaci&oacute;n <br> sobre el documento que no se muestra directamente al usuario,<b>por ejemplo:</b>estilo interno de la p&aacute;gina, <br> metadatos,el t&iacute;tulo,etc. /p>
+                                    <hr>
+                                    <h4><strong>< title> < /title></strong></h4>
+                                    <p class="text-muted">Se utiliza para espicificar el t&iacute;tulo del documento,cabe mencionar que esta etiqueta se utiliza en el <br> encabezado del documento.</p>
+                                    <hr>
+                                    <h4><strong>< body> < /body></strong></h4>
+                                    <p class="text-muted">Se utiliza para indicar el comienzo y final del cuerpo del documento.</p>
+                                    <hr>
+                                    <h4><strong> < h1>
+                                        < h2>
+                                            < h3>
+                                                < h4>
+                                                    < h5>
+                                                        < h6></strong></h4>
+                                    <p class="text-muted">Se utiliza para trabajar con los distintos niveles de t&iacute;tulos en un documento HTML. <b> < h1></b> es el de mayor jerarqu&iacute;a y <b>< h6></b> es el de menor jerarqu&iacute;a.
+                                    </p>
+                                    <hr>
+                                    <h4><strong>< p> < /p></strong></h4>
+                                    <p class="text-muted">Especifica el inicio y final de un p&aacute;rrafo.</p>
+
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_9aI92-wIvA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+
+
+
+                <div class="container">
+
+                    <p><b>Ejemplo:</b>Aprender a utilizar los comandos o etiquetas vistas hasta este momento.</p>
+                    <p><b>Ejemplo1:</b>Para crear este ejemplo,realizar las siguientes instrucciones:</p>
+
+                    <p>1.Abrir el Bloc de notas,dar click en el <b>Bot&oacute;n Inicio</b>,escribir Bloc de notasy dar click en <b>Bloc de notas.</b> </p>
+                    <img src="img/note pad.JPG" alt="950px" width="250px">
+
+                    <p>2.Escribir el siguiente c&oacute;digo.</p>
+                    <img src="img/prueba.JPG" alt="250px" width="950px">
+
+                    <p>3.Guardar el archivo con el nombre <b>prueba.html</b> </p>
+                    <img src="img/guardar prueba.png" alt="950px" width="250px">
+
+                    <p>b.Seleccionar la ubicaci&oacute;n,escribir el nombre <b>prueba.html</b> y dar click en el <b>Bot&oacute;n Guardar</b></p>
+                    <img src="img/prueba ..png" alt="250px" width="950px">
+
+                    <p>4.Ir a la ubicaci&oacute;n del archivo y dar dos click sobre &eacute;l</p>
+                    <img src="img/prueba resultado.png" alt="250px" width="950px">
+                    <p>A continuaci&oacute;se mostrar&aacute; el resultado siguiente:</p>
+                    <img src="img/resultado de prueba1.png" alt="250px" width="950px">
+
+                    <p><b>Ejemplo2:</b> En el siguiente ejemplo,se muestra c&oacute;mo utilizar las etiquetas de t&iacute;tulo.</p>
+
+                    <p>Copiar el contenido que se muestra en el Bloc de Notas y posteriormente,guardarlo con el nombre de <br>
+                        <b>prueba2.html</b></p>
+
+                    <img src="img/prueba2 .png" alt="250px" width="950px">
+
+                    <p>Abrir el archivo en el navegador de su preferencia y observar el resultado,que se muestra a continuaci&oacute;n:</p>
+                    <img src="img/prueba2.png" alt="250px" width="950px">
+
+                    <h2>Crear Saltos de L&iacute;nea</h2>
+
+                    <p>Para incluir una nueva l&iacute;nea en un punto y forzar a que el texto que sigue se muestra en la siguiente l&iacute;nea, <br> se utiliza la etiqueta
+                        < br>.</p>
+
+                    <p>Insertar la etiqueta
+                        < br> en un determinado punto del texto es equivalente a presionar la tecla <b>ENTER</b> en <br>ese punto.</p>
+
+                    <p>La etiqueta
+                        < br> es una etiqueta vac&iacute;a,en otras palabras,no encierra ning&uacute;n texto,por tal raz&oacute;n,debe <br> abrirse o cerrarse de forma consecutiva (
+                            < br>
+                                < /br>).</p>
+
+
+                    <p>HTML permite utilizar
+                        < br> de forma abreviada indicando que se est&aacute; abriendo y cerrando de <br> forma consecutiva(
+                            < /br>).</p>
+
+                    <p>La etiqueta
+                        < /br> solamente inserta una l&iacute;nea,se deben utilizar tantas etiquetas
+                            < br/> como saltos de <br> l&iacute;neas desee insertar.</p>
+                    <img src="img/prueba 2 code snap.JPG" alt="250px" width="950px">
+
+                    <p>Los p&aacute;rrafos creados con HTML son elementos de bloque,por lo que siempre ocupan toda la anchura de la <br> ventana del navegador.Si lo que se desea es separar un p&aacute;rrafo de otro no es necesario utilizar la etiqueta <br>
+                        < /br/>,bastar&aacute; con separar cada p&aacute;rrafo con la etiqueta
+                        < p>.</p>
+                </div>
+                <div class="container-lg">
+                    <h2>Espacios en Blanco</h2>
+                    <p>HTML considera espacio en blanco a los espacios en blanco,tabuladores,retornos de carro y el caracter <br> de nueva l&iacute;nea <b>Enter</b>. <br>
+
+                        <b>Ejemplo:</b> Escribir el siguiente c&oacute;digo en el Bloc de notas y ejecutarlo
+                        <img src="img/espacios en blanco.JPG" alt="250px" width="950px">
+                        <img src="img/espacio en blanco.png" alt="250px" width="950px">
+
+                        <p>*Solamente se toma un espacio en blanco</p>
+                        <p>En el p&aacute;rrafo anterior se incluyeron varios espacios en blanco pero al abrir el archivo en el navegador solamente <br> se muestra uno,este comportamiento se da porque HTML ignora todos los espacios en blanco sobrantes <br>                            y solamente toma los espacios en blanco que separan las palabras normalmente.</p>
+
+                        <p>En el c&oacute;digo HTML para dejar los espacios en blanco se debe de utilizar <b>& nbsp</b> tantos como espacios en <br> blanco se deseen.</p>
+                        <img src="img/prueba3.png" alt="250px" width="950px">
+                        <img src="img/prueba3 resultado.png" alt="250px" width="950px">
+                        <h2>Resaltar Texto en una P&aacute;gina Web</h2>
+                        <p>Las etiquetas m&aacute;s utilizadas para marcar texto son: <br> <b>*
+            < em>:</b>Realiza con importancia el texto que encierra,el texto se muestra en cursiva. <br>
+                            <b>*< strong>:</b>Realiza la m&aacute;xima importancia del texto que encierra,en otras palabras, el texto que <br> encierra se muestra en negrita.</p>
+
+                    </p>
+                    <img src="img/prueba4.png" alt="250px" width="950px">
+                    <img src="img/prueba4 resultado.png" alt="250px" width="950px">
+
+                    <h2>Caracteres Especiales en una P&aacute;gina Web</h2>
+                    <p>Algunos de los caracteres que se utilizan habitualmente en los textos no se pueden incluir directamente <br> en las p&aacute;ginas web,como los caracteres
+                        < que utiliza HTML para definir sus etiquetas <b>(
+                            <,> y ")</b>,no se pueden <br> utilizar libremente.</p>
+
+                    <p>Para vencer esta limitaci&oacute;n es necesario sustituir los caracteres reservados de HTML por unas expresiones <br> llamadas <b>entidades HTML</b>que representan a cada caracter:</p>
+                </div>
+                <div class="container-xl">
+                    <h3>Entidades</h3>
+
+
+                    <table border="2">
+                        <thead>
+                            <tr>
+                                <th>Entidad</th>
+                                <th>Caracter</th>
+                                <th>Traducci&oacute;n</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> & lt;</td>
+                                <td>
+                                    <</td>
+                                        <td>Signo de menor que</td>
+                            </tr>
+
+                            <tr>
+                                <td> & gt;</td>
+                                <td>></td>
+                                <td>Signo de mayor que</td>
+                            </tr>
+                            <tr>
+                                <td>& amp;</td>
+                                <td>&</td>
+                                <td>Ampersand</td>
+                            </tr>
+
+                            <tr>
+                                <td>& quot;</td>
+                                <td>"</td>
+                                <td>comillas</td>
+                            </tr>
+                            <tr>
+                                <td>& nbsp;</td>
+                                <td>espacio en blanco</td>
+                                <td>espacio blanco</td>
+                            </tr>
+                            <tr>
+                                <td>& apos;</td>
+                                <td>'</td>
+                                <td>ap&oacute;strofo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                    <h2>Enlaces</h2>
+
+                    <p>La incorporaci&oacute;n del hipertexto en el lenguaje HTML permiti&oacute; crear documentos interactivos,estos <br> proporcionan informaci&oacute;n adicional cuando se solicita.El elemento principal del hipertexto es el <br>
+                        <b>"hiperenlace"</b>,tambi&eacute;n llamado <b>"enlace web"</b> o simplemente <b>"enlace".</b>Los enlaces se utilizan para <br> establecer relaciones entre dos recursos(P&aacute;ginas web,im&aacute;genes,documentos,archivos,etc.).</p>
+
+                    <p>Los enlaces en HTML se crean mediante la etiqueta
+                        < a> (su nombre viene del ingl&eacute;s <b>"anchor"</b>,traducido <br> como <b>"ancla"</b>).
+
+                            <p>La etiqueta o tag
+                                < a> cuenta con los siguientes atributos: <br>
+                                    <b>*name= "texto":</b>Ayuda a asignarle un nombre al enlace para que se pueda acceder desde otros enlaces. <br>
+                                    <b>* href="url":</b>Permite indicar la URL o direcci&oacute;n del recurso que se quiere enlazar.Cuando el usuario <br> da click sobre un enlace, el navegador se dirige a la URL del recurso indicado mediante href.</p>
+
+                    </p>
+                    <p>Una Url es formada por las siguientes partes: <br>
+                        <b>protocolo://dominio/ruta en el servidor</b> <br> Donde: <br>
+                        <b>*Protocolo:</b>Representa el formato en el que se intercambian los datos de nuestro navegador y la <br> m&aacute;quina de destino,existen diferentes protocolos como ser:http,ftp,https,etc. <br>
+                        <b>*Dominio:</b>Indica que servidor de Internet nos va a brindar la informaci&oacute;n solicitada. <br>
+                        <b>www.google.com,www.edicionesfares.com </b> <br>
+                        <b>*Ruta en el Servidor:</b>Indica la ubicaci&oacute;n del archivo que se ha solicitado dentro del servidor. <br> /index.html
+                    </p>
+
+                    <h2>URL absolutas</h2>
+                    <p>Una URL absoluta siempre permite localizar el recurso independientemente de d&oacute;nde partamos,ya que <br> incluye toda la ruta completa de ubicaci&oacute;n. <br> <b>http://www.edicionesfares/Lab1.html</b>
+                    </p>
+                    <p>Un incoveniente de las URL absolutas es que si cambia de ubicaci&oacute;n el recurso,ya no se tendr&aacute; acceso a &eacute;l.</p>
+                    <h2>URL Relativas</h2>
+                    <p>Las URL relativas prescinden de algunas partes de la URL para hacerlas m&aacute;s breves. <br> Las URL relativas se construyen a partir de las URL absolutas y prescinden de la parte del protocolo,del <br> nombre del servidor e incluso
+                        de parte o toda laruta del recurso enlazado <br> <b>/Lab1.html</b>
+                        <p>Las URL realtivas hacen referencia a informaci&oacute;n que se encuentra dentro del mismo sitio.</p>
+                        <h2>URL Internas</h2>
+                        <p>Son enlaces que permiten acceder a p&aacute;ginas dentro del mismo sitio.</p>
+                        <h2>URL Externas</h2>
+                        <p>Sin enlaces que permiten acceder a otras p&aacute;ginas que se encuentran en otros sitios. <br>
+                            <b>Ejemplo:</b>Copiar el siguiente texto en el Bloc de notas y guardarlo con el nombre de <b>prueba6.html</b></p>
+
+                        <img src="img/enlace.png" alt="250px" width="950px">
+                        <p>Al abrir un enlace de una p&aacute;gina HTML es normal que se habr&aacute; en la misma p&aacute;gina que los contienen.Pero <br> puede darse el caso que esto no sea lo que m&aacute;s nos interese,si deseamos abrir el enlace en
+                            una nueva <br> ventana,se le asginar&aacute; al atributo target de la etiqueta
+                            < a> el valor_blank. <br> <br> Si en el archivo prueba6.html,modificamos el enlace de P&aacute;gina Principal de Fares a <br>
+                                < a target="_blank" href="http://www.edicionesfares.com">P&aacute;gina principal de Fares
+                                    < /a>
+                        </p>
+                    </p>
+
+                    <img src="img/enlace nuevo.png" alt="250px" width="950px">
+                    <p>HTML nos proporciona un mecanismo mediante el cual podemos enlazarnos a una parte en espec&iacute;fico de <br> la p&aacute;gina en la que estamos actualmente o de otra p&aacute;gina.Para crear enlaces a un lugar espec&iacute;fico de
+                        una
+                        <br> p&aacute;gina debemos crear un ancla con el atributo name de la etiqueta
+                        < a>. <br>
+                            < a name="libro1">An&aacute;lisis y Diseño
+                                < /a>
+                                    <br> name = Atributo name An&aacute;lisis y Diseño Texto que se mostrar&aacute;,no es obligatorio.
+                    </p>
+                    <p>En nuestro ejemplo,hemos definido un ancla al que le hemos llamado <b>"libro1"</b>,este ancla hace referencia <br> al tema de <b>An&aacute;lisis y Diseño</b> dentro del documento.El nombre que se le da al ancla es muy importante <br>                        recordarlo ya que este ser&aacute; el nombre que se utilizar&aacute; a la hora de realizar el enlace.</p>
+
+                    <p>Para realizar un enlace al ancla se hace con el atributo href de la etiqueta
+                        < a> ya que este atributo se <br> utiliza para indicar la URL del enlace.</p>
+
+                    <p>Para crear un enlace dentro de la misma P&aacute;gina,la instrucci&oacute;n ser&iacute;a la siguiente: <br>
+                        < a href="#libro1">An&aacute;lisis y Diseño
+                            < /a> <br> Como se puede observar en el ejemplo,antes del signo almohadilla (#) no se hace referencia a ning&uacute;n <br> nombre de p&aacute;gina ya que se est&aacute; asumiendo que el enlace y el ancla est&aacute; dentro de la
+                                misma p&aacute;gina.
+                                <br> Para crear un enlace a un ancla dentro de otra p&aacute;gina,la instrucci&oacute;n ser&iacute;a la siguiente: <br>
+                                < a href="pagina1#libro1">An&aacute;lisis y Diseño
+                                    < /a>
+
+
+                    </p>
+                    <p>Como se puede observar en el ejemplo,se est&aacute; haciendo referencia al ancla libro1 de la pagina1.</p>
+                    <!--Section: Content-->
+
+                    <hr class="my-5" />
+
+                    <!--Section: Content-->
+                    <section class="mb-5">
+                        <h4 class="mb-5 text-center"><strong>Derechos Reservados</strong></h4>
+
+
+                        <!--Main layout-->
+
+
+
+                        <!-- Copyright -->
+                        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                            © 2021 Copyright:
+                            <a class="text-dark" href="#">Nuria Mayorga Almendarez</a>
+                        </div>
+                        <!-- Copyright -->
+                        </footer>
+                        <!--Footer-->
+
+
+                        <!--JQuery-->
+                        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+                        <!--Bootstrap tooltips-->
+                        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+                        <!---Bootstrap core JavaScript-->
+                        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+                        <!--MDB core JavaScript-->
+                        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/js/mdb.min.js"></script>
+
+                        <button type="button" class="btn btn-outline-primary"><a href="Dreamweaver CC.html">Ir a la siguiente p&aacute;gina</button></a>
+
+                </div>
+
+
+</body>
+
+</html>
